@@ -32,7 +32,7 @@ Angular CLI: Install globally with npm install -g @angular/cli
 Installation
 
 Clone the Repository:
-git clone https://github.com/<your-username>/task-manager-rxjs.git
+git clone https://github.com/bhuvaneshwar-2002/task-manager-rxjs.git
 cd task-manager-rxjs
 
 
@@ -91,8 +91,6 @@ This project is licensed under the MIT License.
 Contact
 
 GitHub: Your GitHub Profile
-Email: [Your Email]
-Portfolio: [Your Portfolio Link]
+Email: Bhuvaneshwar2002s@gmail.com
 
-
-Built with 💻 and ☕ by [Your Name]
+Built with 💻 and ☕ by Bhuvi✌️..
