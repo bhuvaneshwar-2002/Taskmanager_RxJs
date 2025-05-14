@@ -1,0 +1,199 @@
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0;
+}
+
+h1 i {
+  color: #3498db;
+  margin-right: 10px;
+}
+
+p {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin: 5px 0 0;
+}
+
+/* Input Card */
+.input-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #dfe6e9;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #3498db;
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+button i {
+  margin-right: 5px;
+}
+
+/* Tabs */
+.tab-header {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+}
+
+.tab-header button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #000;
+  background: #ecf0f1;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-header button.active,
+.tab-header button:hover {
+  background: #3498db;
+  color: white;
+}
+
+/* Task Cards */
+.tab-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-card {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  animation: slideIn 0.3s ease;
+}
+
+.task-card input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  cursor: pointer;
+  accent-color: #3498db;
+}
+
+.task-card span {
+  font-size: 1rem;
+  flex: 1;
+  transition: all 0.3s ease;
+}
+
+.task-card span.completed {
+  text-decoration: line-through;
+  color: #7f8c8d;
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .container {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .input-card {
+    padding: 10px;
+  }
+
+  input,
+  button {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .tab-header button {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+
+  .task-card {
+    padding: 12px;
+  }
+
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: var(--accent-color);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: rotate(180deg);
+}
